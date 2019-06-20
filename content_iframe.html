@@ -1,0 +1,13 @@
+<html>
+  <script>
+    window.addEventListener("message", function(event) {
+      alert( "received: " + event.data );
+    });
+  </script>
+  <body>
+    <h2>Content (port 4001)</h2>
+    <div>Post message content should go here</div>
+
+    <iframe src="http://127.0.0.1:4002/postmessaging_iframe"></iframe>
+  </body>
+</html>
